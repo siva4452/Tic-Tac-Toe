@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <bds />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Enjoy the timeless joy of playing Tic Tac Toe. Dive into the excitement now with BigDevSoon's Tic Tac Toe Project.">
+  <meta name="keywords" content="Tic Tac Toe, game, BigDevSoon, classic game, fun">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
+  <title>Siva - Tic Tac Toe Project</title>
+</head>
+
+<body>
+  <!-- Place below is for your own exciting code -->
+  <div id="homePage" class="home-cantainer">
+    <div class="game-icon">
+      <img src="assets/icons/logo.svg" alt="Siva Tic Tac Toe Logo">
+    </div>
+    <div class="game-info">
+      <h1>Tic Tac Toe</h1>
+      <p>Dive into the ecxitement now and experience the timeless joy of this classic game!</p>
+      <button id="btnNewGame" class="new-game">New game</button>
+    </div>
+
+  </div>
+  <div id="pickPlayer" class="pick-player">
+    <h4>Pick player 1st mark</h4>
+    <div class="mark-card">
+      <div class="radio-group">
+        <label for="markX">
+          <img src="assets/icons/x.svg" alt="x svg">
+          <input type="radio" id="markX" name="playerMark" value="X" checked>
+        </label>
+        <label for="markO">
+          <img src="assets/icons/o.svg" alt="o svg">
+          <input type="radio" id="markO" name="playerMark" value="O">
+        </label>
+
+      </div>
+      <p>REMEMBER: X IS GOING FIRST</p>
+    </div>
+    <button id="btnStartGame" class="new-game">Start game</button>
+  </div>
+  <div id="gameContainer" class="game-container">
+    <div class="player-turn">
+      <div class="turn-logo">
+        <img src="assets/icons/logo.svg" alt="">
+      </div>
+      <div class="turn">
+        <img src="" alt=""><span>TURN</span>
+      </div>
+    </div>
+    <div id="game-board" class="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <div class="pill-container">
+      <div class="pill">
+        <p></p>
+        <h5 id="countX">0</h5>
+      </div>
+      <div class="pill">
+        <p></p>
+        <h5 id="countO">0</h5>
+      </div>
+    </div>
+    <button id="btnResetGame">Reset game</button>
+  </div>
+   
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modalTitle">YOU WON!</p>
+      <h1 id="modalMessage"><img src="" alt=""></h1>
+      <button id="bntQuit" onclick="gameQuit()">Quit</button>
+      <button id="modalButton" onclick="closeModal()">New game</button>
+    </div>
+  </div>
+
+  <!-- Change the [ME] part to your own name/GitHub link -->
+  <div class="footer">
+    <span>Built with [ ❤️ ] by - <a href="https://github.com/siva4452" target="_blank" rel="noopener noreferrer">siva4452</a></span>
+  </div>
+</body>
+
+</html>
